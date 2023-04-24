@@ -1,36 +1,29 @@
 {
   "name": "adivaasi_drishyam",
   "version": "1.0.0",
-  "description": "It's an Online Knowledge Sharing Platform on Indegenious People",
-  "main": "server.js",
+  "description": "Its an adivaasi youth led online platform to make aware of indigenous knowledge to the people",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server",
-    "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohitbilung/Adivaasi_Drishyam.git"
+    "url": "git+https://github.com/rohit-bilung-au13/Adivaasi_Drishyam.git"
   },
   "author": "Eugene Soreng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rohitbilung/Adivaasi_Drishyam/issues"
+    "url": "https://github.com/rohit-bilung-au13/Adivaasi_Drishyam/issues"
   },
-  "homepage": "https://github.com/rohitbilung/Adivaasi_Drishyam#readme",
+  "homepage": "https://github.com/rohit-bilung-au13/Adivaasi_Drishyam#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.5.0",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1"
-  },
-  "devDependencies": {
-    "concurrently": "^7.3.0",
-    "nodemon": "^2.0.19"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mongoose": "^5.11.19"
   }
 }
